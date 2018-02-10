@@ -1,0 +1,39 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav ul li {
+        display: inline;
+
+    }
+    header .subheading {
+        margin: -279px 0px 0px 160px;
+        padding: 0px 0px 25px 0px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+     }
+
+    #forecastheading{
+        margin-top: 80px;
+    }
+
+    section.forecast {
+        display: block;
+    }
+
+    header, nav, main, footer {
+        max-width: 100%;
+    }
+    picture{
+        float: right;
+        margin: -135px 75px 75px 0px;
+        width: 300px;
+    }
+
+    .forecast h3{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,132 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Lora', Baskerville MT, serif;
+    background-color: #efede6;
+}
+
+header, nav, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #72cbe0;
+}
+
+header h1 {
+    font-family: 'Spirax', cursive;
+    font-size: 2rem;
+    position: relative;
+    top: -250px;
+    left: 150px;
+}
+
+header .subheading {
+    font-family: 'Hind', Neue Haas Grotesk, sans-serif;
+    margin: -279px 0px 0px 157px;
+    padding: 13px 0px 45px 0px;
+    color: #FFFFFF;
+    font-size: .8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 10px 0px 13px 90px;
+    width: 100%;
+    background-color: #4a494a;
+    font-size: 1.3rem;
+}
+
+nav ul li {
+    display: block;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 28px;
+    margin: 10px;
+}
+
+nav ul li a:hover {
+    color: #a9bb8c;
+}
+
+table, th, td{
+    border: 1px solid black;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    margin: auto;
+}
+
+thead{
+    background-color: #ffb052;
+}
+
+tbody{
+    background-color: #72cbe0;
+}
+
+table{
+    background-color: #4a494a;
+}
+
+main h2 {
+    font-family: 'Hind', Neue Haas Grotesk, sans-serif;
+    margin: 2rem;
+}
+
+main figure {
+    margin: 0 0 .2rem; max-width:100%;
+}
+
+main figure img {
+    width: 100%;
+    margin: -21px 0px 12px 0px;
+}
+
+h3 {
+    font-family: 'Hind', Neue Haas Grotesk, sans-serif;
+    margin-left: 35px;
+    color: #ffb052;
+}
+
+section.forecast {
+    display: none;
+}
+
+.current, .conditions, .highlow {
+    text-align: left;
+    margin-left: 50px;
+}
+
+picture{
+    margin: -150px 75px 75px -50px;
+}
+
+.town-article{
+    margin: 15px 15px 15px;
+}
+
+footer {
+    background-color:#4a494a;
+    display: block;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+footer aside {
+    background-color: #72cbe0;
+    padding: 1rem 1rem;
+    margin-top: -17px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
