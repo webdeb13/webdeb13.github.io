@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Weather Vine - current city weather forecasts and reports</title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="Up-to-date and accurate weather forecasts for Franklin, Greenville and Springfield cities">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header>
+            <figure class="logo">
+                <img src="images/weather-vine-logo.png" alt="The site logo">
+            </figure>
+                <h1>The Weather Vine</h1>
+            <div id="motto" class="subheading">Up-to-date weather right off the vine</div>
+
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="franklin-7.html">Franklin</a></li>
+                <li><a href="greenville/">Greenville</a></li>
+                <li><a href="spinrgfield/">Springfield</a></li>
+                <li><a href="storm-center/">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <figure>
+                <img src="images/city-franklin-banner.jpg" alt="Franklin city town image" size="100vw"
+                     srcset="images/city-franklin-banner400.jpg 400w,
+                             images/city-franklin-banner800.jpg 800w,
+                             images/city-franklin-banner1000.jpg 1000w,">
+            </figure>
+            <h2 id="cityheading">The City of Franklin</h2>
+            <section>
+                <h3>Weather Summary</h3>
+
+                <div class="highlow">
+                    <p><strong>Sunny</strong></p>
+                    <p>High: <strong><span id="highTemp">89</span>&deg;F</strong></p>
+                    <p>Low: <strong><span id="lowTemp">65</span>&deg;F</strong></p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <strong>0 %</strong></p>
+                    <p>Wind Speed: <strong><span id="windSpeed">10</span> mph SW</strong></p>
+                    <p>Wind Chill Average: <strong><span id="outputWindChill"></span></strong></p>
+                    <div class="current">
+                        <picture>
+                            <img src="images/sunny-weather-640x310.jpeg" id="image2" alt="Current weather outside sunny"
+                                 sizes="50vw"
+                                 srcset="images/franklin-small300.jpg 300w,
+                                         images/franklin-medium500.jpg 400w,
+                                         images/franklin-large800.jpg 800w,">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3 id="forecastheading">10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3 id="heading-break">Franklin Breaks Record</h3>
+                    <picture class="image-city">
+                        <img src="images/city-image640x359.jpeg" id="image3"  alt="Sunny weather with breaking temperatures"
+                             sizes="50vw"
+                             srcset="images/city-image240.jpg 240w,
+                                     images/city-image440.jpg 440w,
+                                     images/city-image640.jpg 640w">
+                    </picture>
+                <p class="town-article">
+                    Unseasonably warm weather continues today, with some locations seeing daytime temperatures 10°F or more above normal. However, this warm weather is expected to end Saturday as a cold front passes through the region bringing temperatures back down to seasonal levels.<br><br>
+
+                    This cold front will bring a chance of rain and snow for much of western Colorado with the central and southern Colorado mountains seeing the best chance of snow accumulations. Generally, 5 to 10 inches of snow is expected to fall by late Saturday. Sunday will be dry as this disturbance quickly leaves the region.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <aside>
+                The Weather Vine<br>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (999)999.9999<br>
+                contact@theurl.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Weather Vine | <span id="currentDate"></span></p>
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>
