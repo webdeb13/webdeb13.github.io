@@ -1,13 +1,12 @@
 @media only screen and (min-width: 64em){
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-
-    nav ul{
-        margin-left: 115px;
-    }
-
     header h1 {
         font-size: 3rem;
+    }
+
+    nav ul li{
+        flex: auto;
     }
 
     h3, .highlow, .conditions, .current{
@@ -15,43 +14,45 @@
     }
 
     .forecast h3{
+        margin-top: 6rem;
         margin-left: 235px;
+        padding-top: 100px;
     }
 
-    .town-article{
-        margin-right: 150px;
-        padding: 0px 120px 0px 190px;
-        margin-left: 45px;
+    #image2{
+        float: left;
     }
 
-    article{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    .after-box{
+        clear:both;
+    }
+
+    footer{
+        clear: both;
+    }
+
+    section picture{
+        margin: -133px 513px 0px 45px;
+    }
+
+   .town-article{
+        margin-right: 700px;
+        padding: 0px 15px 0px 215px;
+    }
+
+    article picture.image-city img{
+        float: right;
+        max-width: 500px;
     }
 
     #heading-break {
-        margin-left: 235px;
-    }
-
-    picture {
-        margin-left: 365px
+        padding-top: 65px;
+        margin-left: 230px;
     }
 
     #cityheading {
         margin-left: 178px;
     }
-
-    #image2 {
-        margin-top: -245px;
-        margin-left: 245px;
-    }
-
-    #image3 {
-        margin-right: 195px
-    }
-
-    /* CSS for gallery */
 
     main.grid-layout{
         display: grid;

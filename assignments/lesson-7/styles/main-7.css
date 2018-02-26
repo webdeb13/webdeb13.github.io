@@ -2,15 +2,15 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body{
+body {
     font-size: 16px;
-    font-family: 'Lora', "Baskerville MT", serif;
+    font-family: 'Lora', Baskerville MT, serif;
     background-color: #efede6;
 }
 
 header, nav, main, footer {
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -18,34 +18,29 @@ header {
 }
 
 figure.logo {
-    padding-top: 10px;
-    margin-top: 0px;
-    margin-left: 0px;
+    padding-top: 25px;
+    margin-top: -25px;
+    margin-left: 0;
 }
 
 #motto {
-    margin-left: 80px;
+    margin-left: 155px;
 }
 
 header h1 {
     font-family: 'Spirax', cursive;
     font-size: 2rem;
     position: relative;
-    top: -150px;
-    left: 80px;
+    top: -250px;
+    left: 155px;
 }
 
 header .subheading {
     font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
-    margin: -175px 0px 0px 0px;
+    margin: -279px 0px 0px 157px;
     padding: 13px 0px 45px 0px;
     color: #FFFFFF;
     font-size: .8rem;
-}
-
-.logo img{
-    width: 150px;
-
 }
 
 nav button {
@@ -58,14 +53,15 @@ nav button {
 
 nav {
     background-color: #4a494a;
-    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    font-family: 'Hind', Neue Haas Grotesk, sans-serif;
+    margin-bottom: 18px;
 
 }
 
 nav ul {
     list-style-type: none;
-    margin-top: -5px;
-    margin-bottom: .5rem;
+    margin-top: 0px;
+    padding: 0px 0px 1px 0px;
     width: 100%;
     background-color: #4a494a;
     font-size: 1.3rem;
@@ -74,24 +70,25 @@ nav ul {
 nav ul li {
     display: block;
     color: #ffffff;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 nav ul li a {
     display: block;
     color: #ffffff;
     text-decoration: none;
-    padding: 0px 28px 0px 5px;
+    padding: 8px 28px;
     margin: 10px;
 }
 
 nav ul li a:hover {
     color: #a9bb8c;
-}
 
+}
 nav ul.hide {
     display: none;
 }
+
 
 table, th, td{
     border: 1px solid black;
@@ -123,14 +120,18 @@ main figure {
 
 main figure img {
     width: 100%;
-    margin: 0px 0px 12px 0px;
+    margin: -21px 0px 12px 0px;
 }
 
 h3 {
     font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
     margin-left: 35px;
     color: #ffb052;
+}
 
+article h3#heading-break{
+    margin-bottom: -25px;
+    padding-top: 25px;
 }
 
 section.forecast {
@@ -142,12 +143,14 @@ section.forecast {
     margin-left: 50px;
 }
 
-picture{
-    margin-top: -50px;
+.current picture{
+    float: right;
+    margin-top: -215px;
+    padding-left: 35px;
 }
 
 .town-article{
-    margin: 5px 35px 30px;
+    margin: 0px 35px 15px 15px;
 }
 
 footer {
@@ -155,6 +158,10 @@ footer {
     display: block;
     text-align: center;
     padding: 1rem 1rem;
+}
+
+.footer-bar{
+    color: #ffffff;
 }
 
 footer aside {
@@ -165,16 +172,8 @@ footer aside {
     margin-right: -25px;
 }
 
-p.footer-bar {
-    color: #ffffff;
-}
-
-#image2{
-    margin-left: -65px;
-}
-
 #image3{
-    margin: 5px 35px;
+    margin: 40px 0px 10px 0px ;
 }
 
 .clearfix:after{
@@ -182,6 +181,7 @@ p.footer-bar {
     display: table;
     clear: both;
 }
+
 /* CSS for gallery pages*/
 
 main figure.gallery{
@@ -190,3 +190,7 @@ main figure.gallery{
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
+
+
+

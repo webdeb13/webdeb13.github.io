@@ -3,53 +3,38 @@
 
 
     nav button {
-        display: none;
+        display:none;
     }  /* hamburger button does not need to be shown */
 
     nav ul.hide{
-        display: block;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        margin-left: 25px;
+        padding-right: 50px;
     }
 
     nav ul {
         list-style-type: none;
-        padding: 0;
         width: 100%;
         background-color: #4a494a;
         font-size: 1.3rem;
     }
 
     nav ul li {
-        display: inline-flex;
-        flex-direction: row;
-        margin: 0px 0px -20px 0px;
-    }
-    nav ul li a{
-        flex: 1 100%;
-    }
+        margin: -8px -25px -13px -25px;
+        padding-left: 25px;
 
+    }
     header .subheading {
-        margin: -285px 0px 0px 160px;
-        padding: 0px 0px 50px 0px;
+        margin: -279px 0px 0px 160px;
+        padding: 0px 0px 25px 0px;
     }
 
     header h1 {
         font-size: 3rem;
-        top: -260px;
-        left: 150px;
      }
-
-    figure.logo {
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }
-
-    .logo img{
-        width: 275px;
-    }
-
-    #motto {
-        margin-left: 155px;
-    }
 
     #forecastheading{
         margin-top: 80px;
@@ -59,36 +44,36 @@
         display: block;
     }
 
-    .current picture{
-        margin-top: 20px;
-        margin-left: 125px;
-    }
-
     header, nav, main, footer {
         max-width: 100%;
     }
 
     picture{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        float: right;
+        margin: -135px 175px 0px 0px;
+        padding-left: 13px;
         width: 300px;
+    }
+    p.town-article{
+        margin-top: 35px;
+    }
+
+    article, section {
+        margin-top: 50px;
+    }
+
+    #image2{
+        margin-top: -25px;
     }
 
     #image3{
-        margin-top: 40px;
-        margin-bottom: 15px;
-        margin-left: 275px;
+        margin-top: 135px;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
     }
 
     .forecast h3{
         margin-top: 2rem;
-    }
-
-    article h3{
-        margin-top: 4rem;
-        padding-bottom: 10px;
     }
 
     /* CSS for Gallery Page */
