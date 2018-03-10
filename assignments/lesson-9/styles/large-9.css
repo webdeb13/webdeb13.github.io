@@ -1,0 +1,111 @@
+@media only screen and (min-width: 64em){
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li{
+        flex: auto;
+    }
+
+    h3, .highlow, .conditions, .current{
+        margin-left: 11%;
+    }
+
+    .forecast h3{
+        margin-left: 113px;
+
+    }
+
+    #image2{
+        float: left;
+        margin-left: 125px;
+
+
+    }
+
+    .after-box{
+        clear:both;
+    }
+
+    footer{
+        clear: both;
+    }
+
+    section picture{
+        margin: 0px 475px 0px 0px;
+    }
+    p.town-article{
+        margin-top: 35px;
+        margin-left: 11%;
+        margin-right: 53%;
+        margin-bottom: 5%;
+    }
+
+    article picture.image-city img{
+        float: right;
+        max-width: 425px;
+    }
+
+    article {
+        margin-top: 7rem;
+    }
+
+    #forecastheading{
+        margin-top: 10rem;
+        padding-top: 2rem;
+    }
+    #cityheading {
+        margin-left: 70px;
+    }
+
+    /* CSS for gallery page */
+    main.grid-layout{
+
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 25px 25px;
+    }
+
+    .gallery:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    /* CSS for Storm Center */
+    main.stormcenter{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    /* CSS for Home Page */
+
+    .leftcol {
+        flex: 1 0 25em;
+        margin: -45px 0px 0px 45px;
+    }
+
+/* CSS for Home Page */
+    picture.town-image {
+        float: left;
+        margin: 0 0 4.3em 5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 10px;
+        width: 50%;
+
+    }
+    picture.third {
+        margin-top: 2rem;
+    }
+    section.weatherstory{
+        margin-bottom: -50px;
+    }
+    section.townArticles{
+        margin-right: 3rem;
+
+    }
+    picture.breaking-image img{
+        margin-top: -125px;
+    }
+
+}
+

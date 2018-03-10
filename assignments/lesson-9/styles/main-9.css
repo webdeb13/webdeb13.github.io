@@ -1,0 +1,360 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+html {background-color: #fff;}
+
+body {
+    font-size: 16px;
+    font-family: 'Lora', Baskerville MT, serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #efede6;
+    height: 100%;
+}
+
+header, nav, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #72cbe0;
+}
+
+figure.logo {
+    padding-top: 25px;
+    margin-top: -25px;
+    margin-left: 0;
+
+}
+
+#motto {
+    margin-left: 155px;
+}
+
+header h1 {
+    font-family: 'Spirax', cursive;
+    font-size: 2rem;
+    position: relative;
+    top: -250px;
+    left: 155px;
+}
+
+header .subheading {
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    margin: -279px 0px 0px 157px;
+    padding: 13px 0px 45px 0px;
+    color: #FFFFFF;
+    font-size: .8rem;
+}
+
+
+
+/* nav styling*/
+
+nav button {
+    margin: .4rem 4%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #4a494a;
+    font-family: 'Hind', Neue Haas Grotesk, sans-serif;
+    margin-bottom: 18px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0px 0px 1px 0px;
+    width: 100%;
+    background-color: #4a494a;
+    font-size: 1.3rem;
+}
+
+nav ul li {
+    display: block;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 28px;
+    margin: 10px;
+}
+
+nav ul li a:hover {
+    color: #a9bb8c;
+
+}
+nav ul.hide {
+    display: none;
+}
+
+/* table styling */
+
+table, th, td{
+    border: 1px solid black;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    margin: auto;
+}
+
+thead{
+    background-color: #ffb052;
+}
+
+tbody{
+    background-color: #72cbe0;
+}
+
+table{
+    background-color: #4a494a;
+}
+
+main h2 {
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    margin: 2rem;
+}
+
+main figure {
+    margin: 0 0 .2rem; max-width:100%;
+}
+
+main figure img {
+    width: 100%;
+    margin: -18px 0px 12px 0px;
+}
+
+h3 {
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    margin-left: 35px;
+    color: #ffb052;
+    font-size: 1.5rem;
+}
+
+article h3#heading-break{
+    margin-bottom: -25px;
+    padding-top: 25px;
+}
+
+section.forecast, .image-town {
+    display: none;
+}
+
+.current, .conditions, .highlow {
+    text-align: left;
+    margin-left: 11%;
+
+}
+
+.current picture{
+    float: right;
+    margin-top: -260px;
+    padding-left: 35px;
+
+}
+
+.town-article{
+    margin: 0px 0px 15px 10px;
+
+}
+
+footer {
+    background-color:#4a494a;
+    display: block;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.footer-bar{
+    color: #ffffff;
+}
+
+footer aside {
+    background-color: #72cbe0;
+    padding: 1rem;
+    margin-top: -17px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+#image3{
+    margin: 40px 0px 10px 0px ;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS for gallery pages*/
+
+main figure.gallery{
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* CSS for stormcenter*/
+
+main.stormcenter {
+    margin: 1rem;
+}
+
+main.stormcenter form h2 {
+    color: #ffb052;
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    text-shadow: 1px 1px #4a494a;
+    font-size: 2.4rem;
+}
+
+main.stormcenter form legend {
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+}
+
+main.stormcenter h1{
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+}
+
+legend {
+    margin-left: 15px;
+    padding: .5rem;
+    background-color: #4a494a;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+fieldset{
+    margin: 2rem 0;
+    border: 2px solid #4a494a;
+    background-color: #C4D4C7;
+}
+
+label {
+    margin: 1rem 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+fieldset textarea {
+    margin: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.level{
+
+    display: inline;
+    margin-left: 5px;
+    padding-left: 15px;
+}
+
+label span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+fieldset label .boxsize {
+    width: 15rem;
+}
+
+.subbutton {
+    background-color: #ffb052;
+    border: 2px solid #ffb052;
+    width: 15rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 10px #4a494a;
+}
+
+/* CSS for thanks.html */
+
+main.thximage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+}
+
+/* CSS for index.html */
+
+#dataStats article{
+    background-color: #C4D4C7;
+    border: 2px solid #4a494a;
+}
+
+#dataStats article h1 {
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    color: #ffb052;
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    text-shadow: 1px 1px #4a494a;
+    font-size: 2.4rem;
+    margin-top: 17px;
+}
+
+#dataStats article p:nth-child(2){
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: -20px;
+    margin-bottom: 0;
+
+}
+
+#wu-logo {
+    max-width: 5rem;
+}
+
+section.weatherstory h1{
+    font-family: 'Hind', "Neue Haas Grotesk", sans-serif;
+    color: #ffb052;
+    margin: 4%;
+}
+
+section.weatherstory p {
+    margin: 1rem 1rem;
+
+}
+
+picture.breaking-image img{
+    max-width: 500px;
+    width: 130%;
+    height: auto;
+    margin-bottom: 2rem;
+
+}
+
+section.townArticles article {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+
+
+}
+
+
+picture.town-image {
+    float: left;
+    padding-left: 3rem;
+}
+
+picture.first{
+    padding: 0;
+}
+picture.second {
+    padding-top: 1.8rem;
+}
+
