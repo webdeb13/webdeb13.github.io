@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Weather Vine - current city weather forecasts and reports</title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="Up-to-date and accurate weather forecasts for Franklin, Greenville and Springfield cities">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/weather-vine-logo.png" alt="The Weather Vine logo">
+            </figure>
+            <h1>The Weather Vine</h1>
+            <div id="motto" class="subheading">Up-to-date weather right off the vine</div>
+
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="grid-home">
+
+            <section class="weatherstory">
+                <div class="leftcol">
+                <h1>Breaking Weather Story</h1>
+                <p>March is off to a roaring start for the East Coast with two strong coastal storms in five days and another potential one looming for early next week.<br><br>
+
+                    First was Winter Storm Riley, which brought destructive winds, heavy snow and severe coastal flooding to the Northeast late last week. Now Winter Storm Quinn is dumping heavy snow on the Northeast Wednesday into Thursday.<br><br>
+
+
+                    After Quinn departs Thursday night, we'll turn our attention to the next potential East Coast storm candidate.<br><br>
+                </div>
+
+                <div class="rightcol">
+                <picture class="breaking-image">
+                    <img src="images/weather-story800x496.jpg" alt="Breaking news weather story">
+                </picture>
+                </div>
+
+            </section>
+
+
+            <section id="dataStats" class="townArticles">
+
+                <picture class="town-image first">
+                    <img src="images/frankin-weather-index350x217.jpg" class="image-town" alt="Breaking news weather story">
+                </picture>
+                <picture class="town-image second">
+                    <img src="images/greenville-weather-index350x217.jpg" class="image-town" alt="Breaking news weather story">
+                </picture>
+                <picture class="town-image third">
+                    <img src="images/springfield-weather-index350x217.jpg" class="image-town" alt="Breaking news weather story">
+                </picture>
+            </section >
+
+
+        </main>
+
+        <footer>
+            <aside>
+                The Weather Vine<br>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (801) 968.8861<br>
+                weathervine@gmail.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Weather Vine | <span id="currentDate"></span></p>
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/weatherdata.js"></script>
+
+    </body>
+</html>
