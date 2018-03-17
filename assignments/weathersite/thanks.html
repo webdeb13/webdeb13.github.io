@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Weather Vine - current city weather forecasts and reports</title>
+        <title>Thank you page - Weather Vine | City storm watcher program</title>
         <meta name="author" content="Debbie Murdock: Student - CIT230:15">
-        <meta name="description" content="Home page for Springfield, Greenville, Franklin cities and statistics">
+        <meta name="description" content="The Weather Vine thank you page for eye witness city storm watcher program">
         <!-- external style references in the proper cascading order -->
         <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -16,6 +16,7 @@
         <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
     </head>
     <body>
+
         <header>
             <figure class="logo">
                 <img src="images/weather-vine-logo.png" alt="The Weather Vine logo">
@@ -36,30 +37,12 @@
             </ul>
         </nav>
 
-        <main>
-
-            <section class="weatherstory">
-                <article class="leftcol">
-                    <h1>Breaking Weather Story</h1>
-                    <p>March is off to a roaring start for the East Coast with two strong coastal storms in five days and another potential one looming for early next week.<br><br>
-
-                        First was Winter Storm Riley, which brought destructive winds, heavy snow and severe coastal flooding to the Northeast late last week. Now Winter Storm Quinn is dumping heavy snow on the Northeast Wednesday into Thursday.<br><br>
-
-
-                </article>
-
-                <article class="rightcol">
-                    <picture class="breaking-image">
-                        <img src="images/weather-story800x496.jpg" alt="Breaking news weather story severe heavy rain">
-                    </picture>
-                </article>
-            </section>
-
-            <section id="dataStats">
-
-                <!--JSON data, html created in weatherdata.js-->
-
-            </section>
+        <main class="thximage">
+            <img src="images/thank-you.png" alt="thank you for participating in our eye witness storm watch"
+                 sizes="100vw"
+                 srcset="images/thank-you200.png 300w,
+                         images/thank-you500.png 700w,
+                         images/thank-you600.png 1150w">
         </main>
 
         <footer>
@@ -70,12 +53,12 @@
                 (801) 968.8861<br>
                 weathervine@gmail.com<br>
             </aside>
-            <p class="footer-bar">&copy;2018 The Weather Vine | <a href="https://www.facebook.com/debbie.murdock13" target="_blank">Debbie Murdock</a> | <a href="https://termsfeed.com/terms-use/301804868751871931f76927196ac9a3" target="_blank">terms of use</a> | <span id="currentDate"></span></p>
+            <p class="footer-bar">&copy;2018 The Weather Vine | Debbie Murdock | <a href="https://termsfeed.com/terms-use/301804868751871931f76927196ac9a3" target="_blank">terms of use</a> | <span id="currentDate"></span></p>
         </footer>
 
-        <script src="scripts/currentdate.js"></script>
+
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/weatherdata.js"></script>
+        <script src="scripts/currentdate.js"></script>
         <script src="scripts/wayfinding.js"></script>
 
     </body>

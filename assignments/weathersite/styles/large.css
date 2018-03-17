@@ -9,17 +9,15 @@
         flex: auto;
     }
 
-    h3, .highlow, .conditions, .current{
+    h3, .current{
         margin-left: 11%;
     }
 
     .forecast h3{
         margin-left: 113px;
-
     }
 
     #image2{
-        float: left;
         margin-left: 125px;
     }
 
@@ -27,13 +25,20 @@
         clear:both;
     }
 
-    footer{
-        clear: both;
+    /* Springfield upcoming events */
+
+    #eventStats article li, #eventGreen article li, #eventFrank article li{
+        left: 210px;
+    }
+
+    #eventStats article ul, #eventGreen article ul, #eventFrank article ul{
+        margin-left: 180px;
     }
 
     section picture{
         margin: 0px 425px 0px 0px;
     }
+
     p.town-article{
         margin-top: 35px;
         margin-left: 11%;
@@ -46,12 +51,13 @@
         max-width: 425px;
     }
 
-
     #forecastheading{
         padding-top: 2rem;
     }
+
     #cityheading {
         margin-left: 70px;
+        margin-bottom: -35px;
     }
 
     /* CSS for gallery page */
@@ -67,39 +73,19 @@
 
     /* CSS for Storm Center */
     main.stormcenter{
-        margin-left: 10em;
-        margin-right: 10em;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 
     /* CSS for Home Page */
 
     .leftcol {
-        flex: 1 0 25em;
+        flex: 1 0 25rem;
         margin: -45px 0px 0px 45px;
     }
 
-/* CSS for Home Page */
-    picture.town-image {
-        float: left;
-
-        padding-left: 5rem;
-        padding-bottom: 10px;
-        width: 50%;
-
-    }
-    picture.third {
-        margin-top: 2rem;
-    }
-    section.weatherstory{
-        margin-bottom: -50px;
-    }
-    section.townArticles{
-        margin-right: 3rem;
-
-    }
     picture.breaking-image img{
         margin-top: -125px;
+        width: 130%;
     }
-
 }
-

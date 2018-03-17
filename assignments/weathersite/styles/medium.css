@@ -1,0 +1,144 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown */
+
+    nav ul.hide{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-left: 25px;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        width: 90%;
+        background-color: #4a494a;
+        font-size: 1.3rem;
+    }
+
+    nav ul li {
+        margin: -8px -25px -13px -25px;
+        padding-left: 25px;
+
+    }
+    header .subheading {
+        margin: -279px 0px 0px 160px;
+        padding: 0px 0px 25px 0px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+     }
+
+    main section h3.first-heading{
+        margin-top: -45px;
+    }
+
+
+    section.forecast, .image-town{
+        display: block;
+    }
+
+    header, nav, main, footer {
+        max-width: 100%;
+    }
+
+    picture{
+        float: right;
+        margin: -135px 100px 0px 0px;
+        padding-left: 13px;
+        width: 300px;
+    }
+    p.town-article{
+        margin-top: 35px;
+        margin-left: 4%;
+    }
+
+    article, section {
+        margin-top: 60px;
+    }
+
+    #image2{
+        margin-top: -55px;
+    }
+
+    #image3{
+        margin-top: 135px;
+    }
+
+    #eventStats article li, #eventGreen article li, #eventFrank article li{
+        margin-left: 150px;
+        list-style-type: none;
+        padding-bottom: 2%;
+        position: relative;
+        left: 145px;
+        top: -40px;
+    }
+
+    #eventStats, #eventGreen, #eventFrank {
+        margin-bottom: -20px;
+    }
+
+    #eventStats article ul, #eventGreen article ul, #eventFrank article ul{
+        font-size: 1.2rem;
+        margin-left: 105px;
+    }
+
+    /* CSS for Gallery Page */
+
+    main.grid-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* CSS for Storm Center */
+
+    main.stormcenter{
+        margin: 2rem 2rem;
+    }
+
+    fieldset label .boxsize {
+        width: 20rem;
+    }
+
+    fieldset textarea {
+        margin: 1rem;
+        width: 35rem;
+        height: 15rem;
+    }
+
+/* CSS for Home Page */
+
+    section.weatherstory{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .leftcol {
+        flex: 1 0 15em;
+        margin: -45px 0px 0px 45px;
+    }
+
+    .rightcol {
+        margin-top: 150px;
+    }
+
+    picture.breaking-image img{
+        width: 100%;
+    }
+
+    #dataStats{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #dataStats article img {
+        max-width: 100%;
+    }
+}

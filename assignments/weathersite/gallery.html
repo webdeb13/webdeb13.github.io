@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Weather Vine - Gallery photos for Franklin, Greenville, Springfield</title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="Image gallery for Franklin, Greenville and Springfield">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body class="content">
+
+        <header>
+            <figure class="logo">
+                <img src="images/weather-vine-logo.png" alt="The Weather Vine logo">
+            </figure>
+            <h1>The Weather Vine</h1>
+            <div id="motto" class="subheading">Up-to-date weather right off the vine</div>
+
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide galleryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="grid-layout">
+            <figure class="gallery">
+                <a><img src="images/gallery1.jpg" class="shadow" alt="rainy weather gallery photo " width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+
+            <figure class="gallery">
+                <a><img src="images/gallery2.jpg" class="shadow" alt="snow landscape gallery photo"  width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+
+            <figure class="gallery">
+                <a href="#"><img src="images/gallery3.jpg" class="shadow" alt="fog covering city gallery photo" width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+
+            <figure class="gallery">
+                <a href="#"><img src="images/gallery4.jpg" class="shadow" alt="lightning striking gallery photo" width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+
+            <figure class="gallery">
+                <a href="#"><img src="images/gallery5.jpg" class="shadow" alt="mountain snow pass gallery photo" width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+
+            <figure class="gallery">
+                <a href="#"><img src="images/gallery6.jpg" class="shadow" alt="hurricane with crashing waves gallery photo" width="300" height="300"></a>
+                <figcaption>Lorem ipsum dolor sit amet, lacinia ac, mi molestie, praesent justo augue sapien tincidunt eget nunc, enim orci fermentum tortor.
+                </figcaption>
+            </figure>
+        </main>
+
+        <footer>
+            <aside>
+                The Weather Vine<br>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (801) 968.8861<br>
+                weathervine@gmail.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 The Weather Vine | <a href="https://www.facebook.com/debbie.murdock13" target="_blank">Debbie Murdock</a> | <a href="https://termsfeed.com/terms-use/301804868751871931f76927196ac9a3" target="_blank">terms of use</a> | <span id="currentDate"></span></p>
+        </footer>
+
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+
+    </body>
+</html>

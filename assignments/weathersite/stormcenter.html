@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Storm Center - eye witness city storm watcher form</title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="The Weather Vine eye witness storm watcher form weather city program">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body class="content">
+
+        <header>
+            <figure class="logo">
+                <img src="images/weather-vine-logo.png" alt="The Weather Vine logo">
+            </figure>
+            <h1>The Weather Vine</h1>
+            <div id="motto" class="subheading">Up-to-date weather right off the vine</div>
+
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="stormcenter">
+            <h1 class="storm-page">Report a Storm</h1>
+            <p>Please fill out the following information to report inclement weather in your travel area.</p>
+            <form action="thanks.html" id="thanksform">
+                <h2>Eye Witness Storm Watcher Form</h2>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label><span>Full Name: </span><input name="fullname" type="text" class="boxsize" pattern="[a-zA-Z ]{5,}" title="5 or more characters" required></label>
+                    <label><span>Email Address: </span><input name="email" type="email" class="boxsize" placeholder="johndoe@gmail.com"></label>
+                    <label><span>Telephone Number: </span><input name="tel" type="tel" class="boxsize" required></label>
+                    <label><span>Zip Code: </span><input name="zipcode" type="number" class="boxsize" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Weather Event</legend>
+                    <label><span>Storm Date: </span><input name="stormdate" type="date" class="boxsize"></label>
+                    <label><span>Storm Type: </span><input name="stormtype" class="boxsize" list="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label><span>Storm Severity: </span><input name="stormsevere" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue" class="level">5</span></label>
+                    <label><span>Storm Region: </span>
+                        <select name="region">
+                            <option value="Select Region" class="boxsize" disabled>-Select Region-</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Springfield">Springfield</option>
+                        </select></label>
+                    <label><span>User In-Danger Level: </span></label>
+                        <span class="level">Yes</span><input name="dangerlevel" type="radio" class="level circle" value="Yes">
+                        <span class="level">Maybe</span><input name="dangerlevel" type="radio" class="level circle" value="maybe">
+                        <span class="level">No</span><input name="dangerlevel" type="radio" class="level circle" value="no">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information or comments</legend>
+                    <textarea name="comment">
+
+                    </textarea>
+                </fieldset>
+                <input name="submitbutton" type="submit" class="subbutton" value="Submit Form" form="thanksform">
+
+            </form>
+        </main>
+
+        <footer>
+            <aside>
+                The Weather Vine<br>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (801) 968.8861<br>
+                weathervine@gmail.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 The Weather Vine | Debbie Murdock | <a href="https://termsfeed.com/terms-use/301804868751871931f76927196ac9a3" target="_blank">terms of use</a> | <span id="currentDate"></span></p>
+        </footer>
+
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/adjustrating.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+
+    </body>
+</html>
