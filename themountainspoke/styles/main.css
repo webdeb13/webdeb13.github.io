@@ -1,0 +1,498 @@
+/* header styles */
+* { box-sizing: border-box;}
+
+html, body {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    background: radial-gradient(circle, #06b7a1, #ffffff);
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #011c21;
+}
+
+header, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+.content-inside {
+    padding-bottom: 50px;
+}
+
+.first-header {
+    display: flex;
+    background-color: #4c1e08;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.social-icons img {
+    padding-left: .4rem;
+    padding-top: .2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+ .first-header p {
+    font-size: .9rem;
+    color: #f2daaa;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header h1 {
+    font-family: 'Kadwa', serif;
+    font-size: 1.3rem;
+    margin-top: 3.5rem;
+    margin-left: -1rem;
+    color: #960400;
+}
+
+.main-header {
+    display: flex;
+    background-color: #f2daaa;
+}
+
+figure.logo {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+figure.logo img {
+    max-width: 80%;
+    height: auto;
+    padding-left: 1rem;
+}
+
+/* nav styles */
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #f2daaa;
+    margin-left: 6%;
+}
+
+nav {
+    background-color: #4c1e08;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {              /* nav links */
+    display: block;
+    text-decoration: none;
+    color: #f2daaa;
+    padding-top: .3rem;
+    padding-bottom: .5rem;
+    border-top: 1px solid #f2daaa;
+    padding-left: 8%;
+    font-size: 1.5rem;
+}
+
+nav ul a:link {
+    color: #960400;
+}
+
+nav ul a:hover {
+    color: #4c1e08;
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    color: #06b7a1;
+}
+
+nav ul li.active a {
+    color: #06b7a1;
+}
+
+nav ul.hide {
+    display: none;    /* hamburger button */
+}
+
+/* main styles */
+
+h1.motto, .address p {
+    font-size: .8rem;
+    color: #4c1e08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: pre;
+}
+
+h1.motto {
+    padding: .9rem;
+}
+
+.address p{
+    padding-top: 45px;
+    margin-bottom: 0;
+}
+
+.emphasize {
+    color: #960400;
+    font-weight: bolder;
+}
+
+h2.title-heading {
+    font-family: 'Kadwa', serif;
+    font-size: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+.position {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: -6px;
+    right: 16px;
+    padding: 5px 0px 8px 0px;
+    background-color: #960400;
+    color: #ffffff;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.bottom-right a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 3px 25px 3px 25px;
+}
+
+.view{
+    background-color: #06b7a1;
+    padding: 6px 15px 6px 15px;
+    margin: 0;
+    margin-right: 8rem;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.view a {
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/* section styles */
+
+img.center, .optimize {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 25rem;
+    grid-gap: 55px;
+    flex: 1 1 auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+article.grid-children {
+    margin: auto;
+}
+
+.grid-home article h2 {
+    font-family: 'Kadwa', serif;
+    color: #960400;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.reg-button, .contact-button {
+    background-color: #06b7a1;
+    padding: 5px 15px;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+/* footer styles */
+
+.footer {
+    height: 43px;
+    margin-top: -53px;
+}
+
+footer {
+    background-color: #4c1e08;
+    color: #f2daaa;
+    text-align: center;
+}
+
+footer p {
+    padding-top: .6rem;
+    white-space: pre;
+    font-size: .9rem;
+}
+
+footer p a:link {
+    color: #f2daaa;
+    text-decoration: none;
+}
+
+footer p a:visited {
+    color: #f2daaa;
+}
+
+footer p a:hover {
+    color: #06b7a1;
+}
+
+footer p a:active {
+    color: #960400;
+}
+
+/* event page styles */
+
+.event-banner h1 {
+    font-family: 'Kadwa', serif;
+    font-size: 1.5rem;
+    left: 1.5rem;
+    text-shadow: 2px 2px black;
+}
+
+.event-headers, .tour-headers, .contact-headers, .resource-header {
+    font-family: 'Kadwa', serif;
+    color: #960400;
+}
+
+.ride-divide, .tour-info, .form-event, .overview-video {
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+/* events registration form */
+
+label {
+    float: left;
+    padding: 15px;
+    margin-right: 7em;
+    width: 10em;
+}
+
+.reg-button {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+textarea{
+    display: block;
+    width: 15rem;
+}
+
+span{
+    padding-right: 5px;
+}
+
+label span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.event-fieldset label .boxsize {
+    width: 15rem;
+    padding: .3rem;
+}
+
+.event-fieldset{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 2px solid #4c1e08;
+    background-color: #f2daaa;
+    color: #4c1e08;
+}
+
+.form-header {
+    margin-left: 2rem;
+}
+
+/* adventure tours styles */
+
+.tour-flex{
+    border-bottom: 2px solid #4c1e08;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.tour-flex img{
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.no-border{
+    border-bottom: none;
+}
+
+/* Service page styles */
+
+.service-intro, .new-bikes, .resource-page {
+    padding-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f2daaa;
+}
+
+.align{
+    text-align: right;
+    padding-right: 13px;
+}
+
+td {
+    color:  #4c1e08;
+}
+
+th{
+    color: #011c21;
+}
+
+.service-table {
+    margin-top: 2rem;
+}
+
+/* Contact Form Styles */
+
+.contact-fieldset {
+    padding-bottom: 2rem;
+    padding-left: 1.6rem;
+    background-color: #f2daaa;
+    color: #4c1e08;
+}
+
+.contact-fieldset label .boxsize {
+    width: 15rem;
+    padding: .3rem;
+}
+
+.contact {
+    float: none;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+.contact-button {
+    margin-top: 1rem;
+}
+
+.top-section{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+p.address {
+    margin-top: -13px;
+}
+
+/* Sales Page Styles */
+
+.specs {
+    line-height: .5rem;
+}
+
+#trek, #salsa, #diamond, .specs {
+    display: none;
+}
+
+.italicized{
+    font-size: .9rem;
+    font-style: italic;
+}
+
+section.resource-page a{
+    color: #06b7a1;
+    text-decoration: none;
+}
+
+section.resource-page a:hover{
+    text-decoration: underline;
+}
+
+section.resource-page p{
+    padding-top: 1rem;
+}
+
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.thanks p{
+    font-size: 1.2rem;
+}
+
+.google-map{
+    width: 350px;
+    height: 345px;
+}
+
+.overview-video{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-size{
+    align-self: center;
+    width: 45rem;
+}
+
+.align-top{
+    align-self:center
+}

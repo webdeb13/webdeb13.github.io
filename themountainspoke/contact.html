@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <!-- meta information -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | Bozeman, Montana | contact form</title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="Contact The Mountain spoke 406-228-8458 for all your bicycle tours, parts, service and products.">
+        <!-- Google API font -->
+        <link href="https://fonts.googleapis.com/css?family=Kadwa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <!-- cascading style sheets -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize file -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- small phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large-wide-desktop views -->
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="content-inside">
+            <div class="first-header">
+                <p><span class="">Contact us: </span>406-228-8458</p>
+
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/"><img src="images/facebook30x30.png" alt="facebook icon" width="30" height="30"></a>
+                    <a href="https://https://twitter.com/"><img src="images/twitter30x30.png" alt="twitter icon" width="30" height="30"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube30x30.png"  alt="youtube icon" width="30" height="30"></a>
+                </section>
+            </div>
+            <header class="main-header">
+
+                <figure class="logo">
+                    <img src="images/mountainspoke-logo125x125.png" class="image-logo" alt="The Mountain Spoke logo">
+                </figure>
+                <h1>The Mountain Spoke</h1>
+
+            </header>
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="toggleBurger" class="hide">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="adventuretours.html">Tours</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section class="top-section" >
+                    <article>
+                        <h1 class="contact-headers">Contact Us</h1>
+
+                        <form action="thanks.html" class="contact-form" id="contact-form">
+                            <fieldset class="contact-fieldset">
+
+                                <label class="contact"><span>Full Name: </span><input name="fullname" type="text" class="boxsize" pattern="[a-zA-Z ]{4,}" title="4 or more characters" required></label>
+                                <label class="contact"><span>Email Address: </span><input name="email" type="email" class="boxsize" placeholder="johndoe@gmail.com"></label>
+                                <label class="contact"><span>Telephone Number: </span><input name="tel" type="tel" class="boxsize" placeholder="( ___ ) ___-____" title="Please include your area-code" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                                <label class="contact"><span>Zip Code: </span><input name="zipcode" type="number" class="boxsize" required></label>
+                                <p>Messages</p>
+                                <textarea name="comment"></textarea>
+                                <input type="submit" class="contact-button" value="submit contact form" form="contact-form">
+                            </fieldset>
+                        </form>
+
+                    </article>
+                    <aside class="contact-border">
+                        <h3><span class="emphasize">The Mountain spoke</span></h3>
+                    <p class="address">3950 Valley Commons Drive<br>
+                        Bozeman, MT 59718
+                        </p>
+                        <p><span class="emphasize">Phone #:</span> 406-228-8458</p>
+                        <p><span class="emphasize">E-mail:</span> mountainspoke@gmail.com</p>
+                        <p><span class="emphasize">Hours:</span> Mon-Sat, 7:00 a.m. - 6:00 p.m.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931254310201!2d-111.09287399753832!3d45.67228037600163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523377355102" class="google-map" allowfullscreen></iframe>
+                    </aside>
+                </section>
+            </main>
+        </div>
+        </div>
+        <footer class="footer">
+            <p >&copy; 2018 The Mountain Spoke   |   <a href="overview.html">overview</a>   |   <a href="resources.html">resources</a></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+    </body>
+</html>

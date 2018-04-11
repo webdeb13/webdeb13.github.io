@@ -1,0 +1,60 @@
+@media only screen and (min-width: 64em){
+    nav ul a {
+        margin-left: 3rem;
+    }
+
+    /* main styles */
+
+    .bottom-right{
+        right: 75px;
+    }
+
+    h2.title-heading {
+        margin-left: 60px;
+    }
+
+    .grid-home{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* event styles */
+
+    .ride-divide {
+        margin-left: 3.1rem;
+        margin-right: 3.1rem;
+    }
+
+    /* adventure tours styles */
+
+    .no-border{
+        border-bottom: none;
+    }
+
+    .tour-flex{
+        margin-left: 3.1rem;
+        margin-right: 3.1rem;
+    }
+
+    /* Service Page Styles */
+
+    .service-intro {
+    padding-top: 1.5rem;
+    margin-left: 3.1rem;
+    margin-right: 3.1rem;
+    }
+
+    .top-section{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+/* New Models Styles */
+
+    .new-bikes{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <!-- meta information -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Service/Repair | The Mountain Spoke | Bozeman, Montana </title>
+        <meta name="author" content="Debbie Murdock: Student - CIT230:15">
+        <meta name="description" content="Mountain bicycle retail and service store. Service, parts and products are available. We will provide free estimates upon service.">
+        <!-- Google API font -->
+        <link href="https://fonts.googleapis.com/css?family=Kadwa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <!-- cascading style sheets -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize file -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- small phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large-wide-desktop views -->
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="content-inside">
+            <div class="first-header">
+                <p><span class="">Contact us: </span>406-228-8458</p>
+
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/"><img src="images/facebook30x30.png" alt="facebook icon" width="30" height="30"></a>
+                    <a href="https://https://twitter.com/"><img src="images/twitter30x30.png" alt="twitter icon" width="30" height="30"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube30x30.png"  alt="youtube icon" width="30" height="30"></a>
+                </section>
+            </div>
+            <header class="main-header">
+
+                <figure class="logo">
+                    <img src="images/mountainspoke-logo125x125.png" class="image-logo" alt="The Mountain Spoke logo">
+                </figure>
+                <h1>The Mountain Spoke</h1>
+
+            </header>
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="toggleBurger" class="hide">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="adventuretours.html">Tours</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section class="event-banner" >
+                    <div class="position">
+                        <img src="images/workshop-banner900x200.jpg" alt="service and repair banner" class="center" width="900" height="275">
+                        <h1 class="title-heading top-left">Service &amp; Repair</h1>
+                    </div>
+                </section>
+
+                <section class="service-intro" >
+                    <h2 class="tour-headers">Full Service and Repair Shop</h2>
+                    <p>We are a full-service bike repair shop. From fixing a flat tire to packing a bike to a comprehensive tune-up,
+                        we can have you road-ready in no time. Estimates are always free: Bring your bike in and we'll recommend what
+                        we think needs to be done. Many services such as flat tires and accessory installations can be done while you wait.
+
+                        Have additional questions, or in need of something that you can't find below? Give us a call. We'll be happy
+                        to go through what you need.
+
+                        Note: Prices reflect service only; parts are not included. Some services may vary with the bike model,
+                        and the related cost may vary accordingly. When you contact us for service, we will let you know if and
+                        when the variation may apply to you.</p>
+                </section >
+
+                <section class="service-intro">
+                    <h2 class="tour-headers">Parts &amp; Service Prices</h2>
+                    <div class="columns">
+                    <article class="service-table left">
+                        <table>
+                            <tr>
+                                <th colspan="2">Tune-Ups</th>
+                            </tr>
+                            <tr>
+                                <td>Basic Tune-up</td>
+                                <td class="align" id="basic-tune"></td>
+                            </tr>
+                            <tr>
+                                <td>Annual Tune-up</td>
+                                <td class="align" id="annual-tune"></td>
+                            </tr>
+                            <tr>
+                                <td>Premium Tune-up</td>
+                                <td class="align" id="premium-tune"></td>
+                            </tr>
+                            <tr>
+                                <td>The Overhaul</td>
+                                <td class="align" id="overhaul"></td>
+                            </tr>
+                            <tr>
+                                <td>Drivetrain Tune-up</td>
+                                <td class="align" id="drive-train"></td>
+                            </tr>
+                          </table>
+                    </article>
+
+                    <article class="service-table left">
+                        <table>
+                            <tr>
+                                <th colspan="2">Accessory Installs</th>
+                            </tr>
+                            <tr>
+                                <td>Fender Install</td>
+                                <td class="align" id="fender"></td>
+                            </tr>
+                            <tr>
+                                <td>Rack Install</td>
+                                <td class="align" id="rack"></td>
+                            </tr>
+                            <tr>
+                                <td>Seatpost or Saddle</td>
+                                <td class="align" id="saddle"></td>
+                            </tr>
+                            <tr>
+                                <td>Cleat Install</td>
+                                <td class="align" id="cleat"></td>
+                            </tr>
+                            <tr>
+                                <td>Training Wheels</td>
+                                <td class="align" id="training"></td>
+                            </tr>
+                        </table>
+
+
+                    </article>
+                    <article class="service-table left">
+                    <table>
+                            <tr>
+                                <th colspan="2">Builds</th>
+                            </tr>
+                            <tr>
+                                <td>Assemble Bike</td>
+                                <td class="align" id="assemble"></td>
+                            </tr>
+                            <tr>
+                                <td>Build Up From Frame</td>
+                                <td class="align" id="build-frame"></td>
+                            </tr>
+                            <tr>
+                                <td>Strip Frame</td>
+                                <td class="align" id="strip-frame"></td>
+                            </tr>
+                            <tr>
+                                <td>Front Wheel Build</td>
+                                <td class="align" id="front-wheel"></td>
+                            </tr>
+                            <tr>
+                                <td>Rear Wheel Build</td>
+                                <td class="align" id="rear-wheel"></td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article class="service-table left">
+                        <table>
+                            <tr>
+                                <th colspan="2">Brake</th>
+                            </tr>
+                            <tr>
+                                <td>Brake Adjust</td>
+                                <td class="align" id="adjust"></td>
+                            </tr>
+                            <tr>
+                                <td>Brake Bleed</td>
+                                <td class="align" id="bleed"></td>
+                            </tr>
+                            <tr>
+                                <td>Brake Cable Install</td>
+                                <td class="align" id="cable-install"></td>
+                            </tr>
+                            <tr>
+                                <td>Brake Install</td>
+                                <td class="align" id="brake-install"></td>
+                            </tr>
+                            <tr>
+                                <td>Brake Pad Install</td>
+                                <td class="align" id="pad-install"></td>
+                            </tr>
+                            <tr>
+                                <td>Brake Rotor Install</td>
+                                <td class="align" id="rotor-install"></td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article class="service-table left">
+                        <table>
+                            <tr>
+                                <th colspan="2">Wheel</th>
+                            </tr>
+                            <tr>
+                                <td>Wheel Build</td>
+                                <td class="align" id="wheel-build"></td>
+                            </tr>
+                            <tr>
+                                <td>Spoke Replace</td>
+                                <td class="align" id="spoke-replace"></td>
+                            </tr>
+                            <tr>
+                                <td>True Wheel</td>
+                                <td class="align" id="true-wheel"></td>
+                            </tr>
+                            <tr>
+                                <td>Tire/Tube Install</td>
+                                <td class="align" id="tire-tube"></td>
+                            </tr>
+                            <tr>
+                                <td>Wheel Slime</td>
+                                <td class="align" id="slime"></td>
+                            </tr>
+                            <tr>
+                                <td>Repair Inner Tube</td>
+                                <td class="align" id="repair-inner"></td>
+                            </tr>
+                            <tr>
+                                <td>Install Inner Tube</td>
+                                <td class="align" id="install-inner"></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <article class="service-table right">
+                    <table>
+                        <tr>
+                            <th colspan="2">Drivetrain</th>
+                        </tr>
+                        <tr>
+                            <td>BB Adjust</td>
+                            <td class="align" id="bbadjust"></td>
+                        </tr>
+                        <tr>
+                            <td>BB Install</td>
+                            <td class="align" id="bbinstall"></td>
+                        </tr>
+                        <tr>
+                            <td>BB Overhaul</td>
+                            <td class="align" id="bboverhaul"></td>
+                        </tr>
+                        <tr>
+                            <td>Cassette Install/Remove</td>
+                            <td class="align" id="cassette"></td>
+                        </tr>
+                        <tr>
+                            <td>Chain Install</td>
+                            <td class="align" id="chain"></td>
+                        </tr>
+                        <tr>
+                            <td>Crankset Install</td>
+                            <td class="align" id="crankset"></td>
+                        </tr>
+                        <tr>
+                            <td>Derailleur Cable Install</td>
+                            <td class="align" id="derailleur-cable"></td>
+                        </tr>
+                        <tr>
+                            <td>Derailleur Adjust</td>
+                            <td class="align" id="derailleur-adjust"></td>
+                        </tr>
+                    </table>
+                    </article>
+
+                    <article class="service-table right">
+                        <table>
+                            <tr>
+                                <th colspan="2">Fork &amp; Headset</th>
+                            </tr>
+                            <tr>
+                                <td>Fork Install</td>
+                                <td class="align" id="fork"></td>
+                            </tr>
+                            <tr>
+                                <td>Headset Adjust</td>
+                                <td class="align" id="headset-adjust"></td>
+                            </tr>
+                            <tr>
+                                <td>Headset Install</td>
+                                <td class="align" id="headset-install"></td>
+                            </tr>
+                            <tr>
+                                <td>Headset Overhaul</td>
+                                <td class="align" id="headset-overhaul"></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <article class="service-table left">
+                        <table>
+                            <tr>
+                                <th colspan="2">Hub &amp; Pedal</th>
+                            </tr>
+                            <tr>
+                                <td>Hub Adjust</td>
+                                <td class="align" id="hub-adjust"></td>
+                            </tr>
+                            <tr>
+                                <td>Hub Overhaul (front)</td>
+                                <td class="align" id="hub-front"></td>
+                            </tr>
+                            <tr>
+                                <td>Hub Overhaul (rear)</td>
+                                <td class="align" id="hub-rear"></td>
+                            </tr>
+                            <tr>
+                                <td>Pedals Install</td>
+                                <td class="align" id="pedals-install"></td>
+                            </tr>
+                            <tr>
+                                <td>Pedals &amp; Cleat Install</td>
+                                <td class="align" id="pedals-cleats"></td>
+                            </tr>
+                            <tr>
+                                <td>Toe Clip Install</td>
+                                <td class="align" id="toe-clip"></td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+                </section>
+            </main>
+        </div>
+        </div>
+        <footer class="footer">
+            <p >&copy; 2018 The Mountain Spoke   |   <a href="overview.html">overview</a>   |   <a href="resources.html">resources</a></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+        <script src="scripts/service-prices.js"></script>
+    </body>
+</html>
