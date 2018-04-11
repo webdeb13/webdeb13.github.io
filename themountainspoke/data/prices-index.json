@@ -1,0 +1,65 @@
+{"prices" : [
+    {
+        "basicTune": "$40",
+        "annualTune":"$70",
+        "premiumTune": "$150",
+        "overhaul": "$300",
+        "drivetrainTune": "$25"
+    },
+    {
+        "fender": "$45",
+        "rack": "$15",
+        "saddle": "$6",
+        "cleat": "$10",
+        "training": "$15"
+    },
+    {
+        "assemble": "$75",
+        "buildFrame": "$150",
+        "stripFrame": "$50",
+        "frontWheel": "$30",
+        "rearWheel": "$30"
+    },
+    {
+        "adjust": "$15",
+        "bleed": "$40",
+        "cableInstall": "$12",
+        "brakeInstall": "$15",
+        "padInstall": "$15",
+        "rotorInstall": "$10"
+    },
+    {
+        "wheelBuild": "$50",
+        "spokeReplace": "$25",
+        "trueWheel": "$15",
+        "tireTube": "$7",
+        "slime": "$5",
+        "repairInner": "$6",
+        "installInner": "$7"
+    },
+    {
+        "bbAdjust": "$15",
+        "bbInstall": "$30",
+        "bbOverhaul": "$50",
+        "cassette": "$10",
+        "chain": "$8",
+        "crankset" : "$25",
+        "derailleurCable": "$10",
+        "derailleurAdjust": "$12"
+    },
+    {
+        "fork": "$40",
+        "headsetAdjust": "$10",
+        "headsetInstall": "$35",
+        "headsetOverhaul": "$50"
+    },
+    {
+        "hubAdjust": "$15",
+        "hubFront": "$30",
+        "hubRear": "$40",
+        "pedalsInstall": "$5",
+        "pedalsCleats": "$10",
+        "toeClip": "$12"
+    }
+ ]
+}
